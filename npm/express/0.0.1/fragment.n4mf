@@ -1,0 +1,3 @@
+RequiredRuntimeLibraries {
+    runtime.nodejs
+}

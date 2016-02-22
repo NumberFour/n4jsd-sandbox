@@ -10,7 +10,7 @@ interface ~CookieOptions {
     secure: boolean?;
 }
 
-export external public class ~Application extends Server implements IRouter {
+export external public class ~Application extends Server implements IRouter{
     public locals: Object;
     public mountpath: string;
     public init(): void;
@@ -35,9 +35,8 @@ export external public class ~Application extends Server implements IRouter {
     @Promisifiable
     public render(name: string, options: Object, callback: {function(err: Error, html: string):void}): void;
     @Override public route(path: string): Route;
-    @Override public use(path: string, ...func: {function(req: Request, res: Response, next: Function)}): this
+    @Override public use(path: string, ...func: {function(req: Request, res: Response, next: {function()})}): this
 }
-
 export external public class ~Request extends IncomingMessage{
     public get (name: string): string;
     public header(name: string): string;
@@ -69,7 +68,6 @@ export external public class ~Request extends IncomingMessage{
     public baseUrl: string;
     public app: Application;
 }
-
 export external public class ~Response extends ServerResponse {
     public status(code: number): this;
     public sendStatus(code: number): this;
@@ -78,11 +76,11 @@ export external public class ~Response extends ServerResponse {
     public json(body: any): this;
     public jsonp(body: any): this;
 
-    @Promisifiable //cb TODO : fix signature
-    public sendFile(path: string, options: any?, errBack: {function(err: Error, any?)}?): void;
+    @Promisifiable
+    public sendFile(path: string, options: any?, errBack: {function(err: Error)}?): void;
 
-    @Promisifiable //cb TODO : fix signature
-    public download(path: string, filename: union{string, {function(err: Error)}}?, errBack: {function(err: Error, any?)}?): void;
+    @Promisifiable
+    public download(path: string, filename: union{string, {function(err: Error)}}?, errBack: {function(err: Error)}?): void;
 
     public contentType(type: string): this;
     public type(type: string): this;
@@ -113,7 +111,7 @@ export external public interface ~IRouter {
     public trace(name: union{string, RegExp}, ...handlers: {function(req: Request, res: Response, next: Function)}): this;
     public connect(name: union{string, RegExp}, ...handlers: {function(req: Request, res: Response, next: Function)}): this;
     public route(path: string): Route;
-    public use(path: string, ...func: {function(req: Request, res: Response, next: Function)}): this
+    public use(path: string, ...func: {function(req: Request, res: Response, next: {function()})}): this
 
 }
 export external public class Route {

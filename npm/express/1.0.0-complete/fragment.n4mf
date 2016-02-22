@@ -1,3 +1,4 @@
 RequiredRuntimeLibraries {
     runtime.nodejs
 }
+ModuleLoader: commonjs

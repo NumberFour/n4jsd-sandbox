@@ -1,4 +1,4 @@
 RequiredRuntimeLibraries {
-    runtime.nodejs
+    n4js-runtime-node
 }
 ModuleLoader: commonjs

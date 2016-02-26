@@ -135,4 +135,11 @@ export external public var response: Response;
 
 export external public function Router(options: any?):IRouter;
 
-export default external public function __default(): Application;
+export default external public class __default {
+    (): Application;
+
+    public static get Router(): Router;
+    public static get Route(): constructor{Route};
+
+    public static static(path: string): {function(req: Request, res: Response, next: {function()})};
+}

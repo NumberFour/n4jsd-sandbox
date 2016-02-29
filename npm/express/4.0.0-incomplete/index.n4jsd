@@ -115,6 +115,7 @@ export external public interface ~IRouter {
 
 }
 export external public class Route {
+    public constructor(path: string);
     public path: string;
     public stack: any;
     public all(name: union{string, RegExp}, ...handlers: {function(req: Request, res: Response, next: Function)}): this;
@@ -128,18 +129,24 @@ export external public class Route {
     public connect(name: union{string, RegExp}, ...handlers: {function(req: Request, res: Response, next: Function)}): this;
 }
 
+export external public const application: Application;
+export external public const request: Request;
+export external public const response: Response;
 
-export external public var application: Application;
-export external public var request: Request;
-export external public var response: Response;
+export external public function Router(options: any?): IRouter;
 
-export external public function Router(options: any?):IRouter;
+export external public function query(options: any?): {function(req: Request, res: Response, next: Function)};
 
 export default external public class __default {
     (): Application;
 
-    public static get Router(): Router;
-    public static get Route(): constructor{Route};
+    public static Router(options: any?): IRouter;
+    public static Route(path: string): Route;
 
     public static static(path: string): {function(req: Request, res: Response, next: {function()})};
+    public static query(options: any?): {function(req: Request, res: Response, next: Function)};
+
+    public const application: Application;
+    public const request: Request;
+    public const response: Response;
 }

@@ -1,0 +1,10 @@
+export external public class ~Utils { }
+export external public class ~Drinker { }
+
+export external public const utils: Utils;
+export external public const drinker: Drinker;
+
+export default external public class __default {
+	public const drinker: Drinker;
+	public const utils: Utils;
+}

@@ -1005,11 +1005,11 @@ export external interface FindAndModifyWriteOpResultObject {
 }
 
 export external interface InsertOneWriteOpResultObject {
-    insertedCount: number;
-    ops: Array<any>;
-    insertedId: ObjectID;
-    connection: any;
-    result: ~ Object with {
+    public insertedCount: number;
+    public ops: Array<any>;
+    public insertedId: ObjectID;
+    public connection: any;
+    public result: ~ Object with {
         ok: number,
         n: number
     };

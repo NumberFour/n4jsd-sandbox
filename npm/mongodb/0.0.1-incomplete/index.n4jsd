@@ -1004,7 +1004,7 @@ export external interface FindAndModifyWriteOpResultObject {
     ok: int?;
 }
 
-export external interface InsertOneWriteOpResultObject {
+export external public interface InsertOneWriteOpResultObject {
     public insertedCount: number;
     public ops: Array<any>;
     public insertedId: ObjectID;

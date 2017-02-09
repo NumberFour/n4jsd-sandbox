@@ -1,0 +1,15 @@
+ProjectId: express
+ProjectType: library
+ProjectVersion: 0.0.1
+VendorId: npm
+Output: "."
+MainModule: "express"
+ModuleLoader: commonjs
+Sources {
+    source {
+        "src"
+    }
+}
+RequiredRuntimeLibraries {
+    runtime.nodejs
+}

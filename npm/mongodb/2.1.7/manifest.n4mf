@@ -1,0 +1,15 @@
+ProjectId: mongodb
+ProjectType: library
+ProjectVersion: 2.1.7
+VendorId: npm
+Output: "."
+MainModule: "index"
+ModuleLoader: commonjs
+Sources {
+    source {
+        "src"
+    }
+}
+RequiredRuntimeLibraries {
+    n4js-runtime-node
+}

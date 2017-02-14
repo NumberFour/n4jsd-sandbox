@@ -1,0 +1,12 @@
+ProjectId: bar
+ProjectType: library
+ProjectVersion: 0.1.2
+VendorId: npm
+Output: "."
+MainModule: "bar"
+ModuleLoader: commonjs
+Sources {
+    source {
+        "src"
+    }
+}

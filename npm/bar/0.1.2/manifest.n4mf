@@ -7,6 +7,6 @@ MainModule: "bar"
 ModuleLoader: commonjs
 Sources {
     source {
-        "src"
+        "."
     }
 }

@@ -3,10 +3,10 @@ ProjectType: library
 ProjectVersion: 0.1.2
 VendorId: npm
 Output: "."
-MainModule: "bar"
+MainModule: "lib/bar"
 ModuleLoader: commonjs
 Sources {
     source {
-        "src"
+        "."
     }
 }

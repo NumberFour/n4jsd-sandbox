@@ -7,7 +7,7 @@ MainModule: "express"
 ModuleLoader: commonjs
 Sources {
     source {
-        "src"
+        "."
     }
 }
 RequiredRuntimeLibraries {

@@ -1,13 +1,13 @@
-ProjectId: example
+ProjectId: foobar
 ProjectType: validation
 ProjectVersion: 0.1.2
 VendorId: npm
 Output: "."
-MainModule: "github"
+MainModule: "index"
 ModuleLoader: commonjs
 Sources {
     source {
-        "."
+        "lib"
     }
 }
 ProjectDependencies {

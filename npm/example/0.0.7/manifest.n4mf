@@ -1,9 +1,9 @@
-ProjectId: foo
+ProjectId: example
 ProjectType: validation
 ProjectVersion: 0.1.2
 VendorId: npm
 Output: "."
-MainModule: "lib/foo"
+MainModule: "github"
 ModuleLoader: commonjs
 Sources {
     source {
@@ -11,5 +11,5 @@ Sources {
     }
 }
 ProjectDependencies {
-    bar
+    bar // this dependency is for testing purposes
 }

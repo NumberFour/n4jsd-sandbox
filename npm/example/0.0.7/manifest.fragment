@@ -1,0 +1,5 @@
+ModuleLoader: commonjs
+
+ProjectDependencies {
+    bar // this dependency is for testing purposes
+}

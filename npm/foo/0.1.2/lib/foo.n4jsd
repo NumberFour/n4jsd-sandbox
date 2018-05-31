@@ -1,0 +1,7 @@
+
+import {Utils} from "bar";
+
+
+export default external public class __default {
+	public const utils: Utils;
+}

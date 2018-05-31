@@ -1,5 +1,5 @@
 ProjectId: bar
-ProjectType: library
+ProjectType: validation
 ProjectVersion: 0.1.2
 VendorId: npm
 Output: "."

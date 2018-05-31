@@ -1,5 +1,5 @@
 ProjectId: express
-ProjectType: library
+ProjectType: validation
 ProjectVersion: 4.0.0-incomplete
 VendorId: npm
 Output: "."
@@ -11,5 +11,5 @@ Sources {
     }
 }
 RequiredRuntimeLibraries {
-    runtime.nodejs
+    n4js-runtime-node
 }

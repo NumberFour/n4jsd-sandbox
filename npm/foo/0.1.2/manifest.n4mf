@@ -1,12 +1,15 @@
-ProjectId: react
+ProjectId: foo
 ProjectType: validation
-ProjectVersion: 16.0.0
+ProjectVersion: 0.1.2
 VendorId: npm
 Output: "."
-MainModule: "index"
+MainModule: "lib/foo"
 ModuleLoader: commonjs
 Sources {
     source {
         "."
     }
+}
+ProjectDependencies {
+    bar
 }

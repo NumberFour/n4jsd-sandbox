@@ -1,0 +1,15 @@
+{
+	"name": "bar-n4jsd",
+	"version": "0.0.1",
+	"n4js": {
+		"projectType": "definition",
+		"definesPackage": "bar",
+		"mainModule": "lib/bar",
+		"vendorId": "org.eclipse.n4js",
+		"sources": {
+			"source": [
+				"."
+			]
+		}
+	}
+}
